@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Emergency Route Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="branding">
+    <span class="logo">🚑</span>
+    <div>
+      <h1>Emergency Route Optimizer</h1>
+      <p>Get in touch or learn more about how to use the simulator.</p>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Contact & Support</span>
+      <h2>Reach out for questions or collaboration.</h2>
+      <p>Whether you want to learn more about the routing logic or test the simulator, we are here to help.</p>
+      <div class="hero-actions">
+        <a class="primary-btn" href="index.html">Start Simulator</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="status-card">
+        <span>Contact</span>
+        <strong>Support and product information available.</strong>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Email</h3>
+          <p>support@example.com</p>
+        </article>
+        <article class="feature-card">
+          <h3>Phone</h3>
+          <p>+123 456 7890</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="section-header">
+      <h2>Request a demo</h2>
+      <p>Use the simulator page to explore route optimization and green corridor behavior.</p>
+    </div>
+    <form class="form-panel" onsubmit="submitContact(event)">
+      <label for="contact-name">Name</label>
+      <input id="contact-name" type="text" placeholder="Your name">
+      <label for="contact-email">Email</label>
+      <input id="contact-email" type="email" placeholder="you@example.com">
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" rows="5" placeholder="Tell us what you need"></textarea>
+      <button type="submit" class="primary">Send message</button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>Emergency Route Optimizer - Contact</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

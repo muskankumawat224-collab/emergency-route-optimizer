@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Route Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="branding">
+    <span class="logo">🚑</span>
+    <div>
+      <h1>Emergency Route Optimizer</h1>
+      <p>Adaptive routing for emergency response teams and first responders.</p>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <a href="#route-form">Simulator</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Fast. Safe. Connected.</span>
+      <h2>Reduce response time with traffic-aware emergency routing.</h2>
+      <p>Simulate optimized routes, compare normal travel time, and activate green corridors to prioritize emergency traffic at intersections.</p>
+      <div class="hero-actions">
+        <a class="primary-btn" href="#route-form">Try Simulator</a>
+        <a class="secondary-btn" href="#benefits">See Benefits</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="status-card">
+        <span>Live dashboard</span>
+        <strong>Ready for route optimization</strong>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Smart routing</h3>
+          <p>Estimates the fastest emergency route based on current traffic levels.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Priority response</h3>
+          <p>Shows projected time savings with an optimized path.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="route-form" class="controls">
+    <div class="section-header">
+      <h2>Route Optimization Simulator</h2>
+      <p>Enter the start and destination to compare normal travel time with an optimized emergency route.</p>
+    </div>
+    <div class="form-grid">
+      <div class="form-panel">
+        <label for="start">Start location</label>
+        <input type="text" id="start" placeholder="e.g. Central Hospital">
+
+        <label for="end">Destination</label>
+        <input type="text" id="end" placeholder="e.g. City Square">
+
+        <label for="traffic">Traffic intensity</label>
+        <select id="traffic">
+          <option value="1">Low traffic</option>
+          <option value="5">Medium traffic</option>
+          <option value="10">High traffic</option>
+        </select>
+
+        <button onclick="optimizeRoute()">Optimize Route</button>
+      </div>
+
+      <div class="result-panel">
+        <h3>Results</h3>
+        <div id="result" class="result-card">Enter route details to see estimated savings.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="simulator" class="signals">
+    <div class="section-header">
+      <h2>Signal Corridor Simulation</h2>
+      <p>Activate a green corridor to simulate priority signal timing for emergency vehicles.</p>
+    </div>
+    <div class="signal-panel">
+      <button onclick="sendSignal()">Activate Green Corridor</button>
+      <p id="signalStatus">No corridor active</p>
+    </div>
+  </section>
+
+  <section id="benefits" class="stats">
+    <article class="stat-card">
+      <h3>Faster responses</h3>
+      <p>Optimized emergency routing lowers response time by avoiding congestion and signal delays.</p>
+    </article>
+    <article class="stat-card">
+      <h3>Real-time decisions</h3>
+      <p>Simulated insights support dispatchers and traffic managers with quick route comparisons.</p>
+    </article>
+    <article class="stat-card">
+      <h3>Safer corridors</h3>
+      <p>Green corridor activation prioritizes emergency traffic while improving intersection flow.</p>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>Designed for emergency services training and route planning demonstrations.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
